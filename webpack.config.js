@@ -1,9 +1,9 @@
 const path = require('path'); // Travailler avec les dossiers
+const Dotenv = require('dotenv-webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // Configuration principale du projet
 module.exports = {
-
     // Point d'entrée" de ton app
     entry: './src/js/index.js',
 
@@ -18,6 +18,8 @@ module.exports = {
         publicPath: '',
         assetModuleFilename: 'images/[hash][ext][query]'
     },
+
+    watch: true,
 
     // Loaders
     module: {
@@ -90,8 +92,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'bundle.css',
         }),
+        new Dotenv(), //gestion du fichier .env
     ],
 
     // Par défaut, le mode de Webpack est "production"
     mode: 'development',
+    //mode: 'production',
 };
