@@ -1,0 +1,17 @@
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/sass/style.scss ***!
+  \************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(fonts/e2d60bc49517598c0ce8.ttf);
+}
+p {
+  color: #ff1414;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-img {
+  width: 100px;
+  height: 100px;
+  background-image: url(images/d8ca31a015ba96fed670.png);
+}

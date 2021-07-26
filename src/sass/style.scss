@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+$font: 'Montserrat', sans-serif;
+$color-red: rgb(255, 20, 20);
+
+p {
+  color: $color-red;
+  font-family: $font;
+}
+
+.bg-img {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/picto-phb-200.png');
+}
